@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>روفانا بوتيك | تطريز يدوي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ أيقونات SVG ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-3-1.2-5-4.3-5.2-4.5-.1-.2-1.2-1.600-1.200-3s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.400 0 .600l-.4.600-.3.300c-.1.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.500.3.100.5.100.7-.1l1-1.200c.2-.3.400-.2.700-.1l1.900.9c.3.100.5.200.6.300.1.200.1.800-.1 1.500z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.500a4.500 4.500 0 1 1 0 9 4.500 4.500 0 0 1 0-9zm0 2a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5zM17.500 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><path d="M3 5h18v2.500H3zm0 5.800h18v2.500H3zM3 16.500h18V19H3z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.500 14.500L6 12l1.500-1.500 3 3 6-6L18 9z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="m12 2 3 6.500 7 .8-5.200 4.800 1.500 7L12 17.600 5.700 21l1.500-7L2 9.300l7-.8z"/></symbol>
+  <symbol id="hand" viewBox="0 0 24 24"><path d="M9 3a1.500 1.500 0 0 1 3 0v6h1V4a1.500 1.500 0 0 1 3 0v5h1V6a1.500 1.500 0 0 1 3 0v8a8 8 0 0 1-8 8h-1a7 7 0 0 1-6-3.400L3 15a1.500 1.500 0 0 1 2.400-1.700L7 15V6a1.500 1.500 0 0 1 3 0z"/></symbol>
+  <symbol id="gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9zm1.500 6L12 17l4.500-8z"/></symbol>
+  <symbol id="wand" viewBox="0 0 24 24"><path d="m3 20 12-12 1.500 1.500-12 12zM18 2l1 2.500L21.500 5.500 19 6.500 18 9l-1-2.500-2.500-1 2.500-1zM6 4l.7 1.800L8.500 6.500l-1.800.7L6 9l-.7-1.800L3.500 6.500l1.800-.7z"/></symbol>
+  <symbol id="cut" viewBox="0 0 24 24"><path d="M6 3a3.500 3.500 0 1 1 0 7 3.500 3.500 0 0 1-1.500-.3L9 12l-4.500 2.300A3.500 3.500 0 1 1 6 14a3.500 3.500 0 0 1 1.500.3L21 4v2L12 12l9 6v2L7.500 9.700A3.500 3.500 0 0 1 6 10a3.500 3.500 0 0 1 0-7z"/></symbol>
+  <symbol id="bag" viewBox="0 0 24 24"><path d="M7 7V6a5 5 0 0 1 10 0v1h3l1 15H3L4 7zm2 0h6V6a3 3 0 0 0-6 0z"/></symbol>
+</svg>
+
+<!-- ============ الهيدر ============ -->
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <a href="#top" class="logo" aria-label="روفانا بوتيك">
+        <img src="images/p.jpg" alt="R">
+      </a>
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+        <a href="#gallery">المعرض</a>
+        <a href="#products">المنتجات</a>
+        <a href="#about">من نحن</a>
+        <a href="#reviews">آراء العملاء</a>
+        <a href="#contact">تواصلي معنا</a>
+      </nav>
+      <div class="icons">
+        <button class="ib menu" id="menuBtn" aria-label="القائمة" aria-expanded="false"><svg><use href="#menu"/></svg></button>
+        <a class="ib" href="+967 737000023" aria-label="واتساب"><svg><use href="#wa"/></svg></a>
+        <a class="ib" href="https://www.instagram.com/rovanaboutique?exln=MW8waGxodmVraWVsaQ==" aria-label="إنستغرام"><svg><use href="#ig"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ الهيرو ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">روفانا بوتيك · تطريز يدوي</div>
+      <h1>تطريز يدوي يضيف لمسة فريدة لكل إطلالة</h1>
+      <p class="lead">نصمّم ونطرّز الحجابات والأوشحة يدوياً بخيوط وخرز منتقى بعناية، لنمنحكِ قطعة أنيقة تخصّكِ وحدكِ.</p>
+      <div class="cta">
+        <a class="btn fill" href="#products"><svg><use href="#bag"/></svg> تسوّقي الآن</a>
+        <a class="btn line" href="#gallery">تصفّحي المعرض</a>
+      </div>
+      <div class="chips">
+        <span><svg><use href="#hand"/></svg> تصنيع يدوي 100%</span>
+        <span><svg><use href="#star"/></svg> تصاميم فريدة</span>
+        <span><svg><use href="#cut"/></svg> تنفيذ حسب الطلب</span>
+      </div>
+    </div>
+
+    <div class="arch">
+      <img src="images/p0.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- ============ المميزات ============ -->
+<section>
+  <div class="wrap center">
+    <div class="eyebrow">لماذا روفانا</div>
+    <h2>تفاصيل صغيرة تصنع فرقاً كبيراً</h2>
+    <div class="bar-d"></div>
+    <div class="cards3">
+      <div class="card"><div class="ico"><svg><use href="#gem"/></svg></div><h3>خامات وخرز منتقى</h3><p>نختار الأقمشة والخيوط والخرز بعناية فائقة لتدوم قطعتكِ بأناقة لسنوات.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#wand"/></svg></div><h3>تصاميم فريدة</h3><p>نمزج الطابع التراثي باللمسة العصرية لتصميم قطع لا تتكرر.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#cut"/></svg></div><h3>تنفيذ حسب الطلب</h3><p>أخبرينا بفكرتكِ ولونكِ المفضل ونصمّم لكِ القطعة التي تحلمين بها.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ المعرض ============ -->
+<section id="gallery" class="gallery-bg">
+  <div class="wrap">
+    <div class="eyebrow">معرض الأعمال</div>
+    <h2>لمحة من تصاميمنا المطرزة</h2>
+    <div class="bar-d"></div>
+    <p class="lead">كل قطعة تُطرّز يدوياً. اضغطي على أي صورة لعرضها بحجم أكبر.</p>
+    <div class="grid" id="grid">
+     
+    </div>
+  </div>
+</section>
+
+<!-- ============ المنتجات ============ -->
+<section id="products" class="prods">
+  <div class="wrap center">
+    <div class="eyebrow">المعروضات المميزة</div>
+    <h2>اختاري قطعتكِ المفضلة</h2>
+    <div class="bar-d"></div>
+    <p class="lead">قطع مطرزة يدوياً جاهزة للطلب، مع إمكانية تنفيذ تصاميم خاصة حسب رغبتكِ. أرسلي لنا القطعة التي أعجبتكِ على واتساب لتأكيد الطلب وتفاصيل التنفيذ.</p>
+    <div class="pgrid" id="pgrid" style="text-align:right"></div>
+  </div>
+</section>
+
+<!-- ============ قصتنا ============ -->
+<section id="about">
+  <div class="wrap story-grid">
+    <div class="arch" style="background:linear-gradient(160deg,#6b4a3a,#b99a85)"><div class="badge">
+      <img src="images/pp.jpg">
+    </div>
+    <img src="images/p0.jpg">
+  </div>
+    <div>
+      <div class="eyebrow">قصتنا</div>
+      <h2>شغف بالتفاصيل يصنع الفرق</h2>
+      <div class="bar-d"></div>
+      <p class="lead">في روفانا بوتيك بدأت الحكاية بشغف بسيط تجاه التطريز اليدوي. ومن غرزة إلى أخرى تحوّل الشغف إلى مشروع يقدّم حجابات وأوشحة مطرزة بتفاصيل تحاكي ذوقكِ الرفيع. نؤمن أن القطعة المطرزة ليست مجرد إكسسوار، بل توقيع أنيق يخصّكِ وحدكِ.</p>
+      <ul class="ticks">
+        <li><svg><use href="#check"/></svg> غرز يدوية دقيقة تمنح كل قطعة روحاً خاصة</li>
+        <li><svg><use href="#check"/></svg> ألوان وخيارات متجددة تناسب كل مناسبة</li>
+        <li><svg><use href="#check"/></svg> عناية بالتفاصيل من أول غرزة حتى التغليف</li>
+      </ul>
+      <a class="btn line" href="#contact">اقرئي المزيد عنّا</a>
+    </div>
+  </div>
+</section>
+
+<!-- اراء العملاء-->
+<section id="reviews" style="background:linear-gradient(180deg,#f4e9f0,var(--bg))">
+  <div class="wrap center">
+    <div class="eyebrow">آراء العملاء</div>
+    <h2>  ماذا قالت عميلات روفانا؟ </h2>
+    <div class="bar-d"></div>
+    <p class="lead">آراء وصلتنا عبر رسائل العميلات , ننشرها كما هي تقديراََ لثقتهن</p>
+    <div class="rgrid">
+      <article class="rev"><div class="rtop"><div class="q">”</div><div class="stars">★★★★★</div></div><p>والله انك مبدعة وفنانة... ماشاء الله عليكي، استمري.</p><footer><div class="av">م</div><div><b>عميلة روفانا</b><small>٢٠ مايو ٢٠٢٥</small></div></footer></article>
+      <article class="rev"><div class="rtop"><div class="q">”</div><div class="stars">★★★★★</div></div><p>ماشاء الله صدق تسلم يدشش قوي قوي، مبدعة والعمل رهيب ولا غلطة. واحلا بكثيير من الصور ومن اللي توقعته.</p><footer><div class="av">ر</div><div><b>عميلة روفانا</b><small>٣٠ يوليو</small></div></footer></article>
+      <article class="rev"><div class="rtop"><div class="q">”</div><div class="stars">★★★★★</div></div><p>اسعدتني قوي... والله انتي اللي اسعدتيني اكثر، لاني توقعته شي وطلع اجمل من اللي تخيلته اضعاف حرفياً.</p><footer><div class="av">ن</div><div><b>عميلة روفانا</b><small>٢٤ أكتوبر</small></div></footer></article>
+       <article class="rev"><div class="rtop"><div class="q">”</div><div class="stars">★★★★★</div></div><p>والطرحة تجنننن,تسلم يداتشششششش</p><footer><div class="av">س</div><div><b>عميلة روفانا</b><small>٢ مايو</small></div></footer></article>
+        <article class="rev"><div class="rtop"><div class="q">”</div><div class="stars">★★★★★</div></div><p>كييييوت جدا...تسلم يداتها</p><footer><div class="av">ن</div><div><b>عميلة روفانا</b><small>٢٤ أكتوبر</small></div></footer></article>
+    <article class="rev"><div class="rtop"><div class="q">”</div><div class="stars">★★★★★</div></div><p> مساءالخير ,كيف انتي؟ وكل عام وانتي بخير. تسلمي الله يحفظك ,ماشاء الله فديت يدش والقماش روعة</p><footer><div class="av">ف</div><div><b>عميلة روفانا</b><small>٢٤ أكتوبر</small></div></footer></article>
+    </div>
+    </div>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+ 
+
+
+
+
+<!-- ============ التواصل ============ -->
+<section id="contact" class="contact">
+  <div class="wrap cgrid">
+    <div>
+      <div class="eyebrow">تواصلي معنا</div>
+      <h2>هل لديكِ تصميم خاص في بالكِ؟</h2>
+      <div class="bar-d"></div>
+      <p class="lead">أرسلي لنا رسالة تخبرينا فيها بالتصميم أو اللون الذي ترغبين به، وسنعاود التواصل معكِ لتحديد التفاصيل.</p>
+      <div class="info">
+        <div class="row"><div class="ico"><svg><use href="#wand"/></svg></div> تصاميم حسب الطلب</div>
+        <div class="row"><div class="ico"><svg><use href="#star"/></svg></div> رد خلال 24 ساعة</div>
+        <a class="row" href="+967 777000023"><div class="ico"><svg><use href="#wa"/></svg></div> تواصلي معنا مباشرة على واتساب <b dir="ltr">737 000 023</b></a>
+        <a class="row" href="https://instagram.com/YOUR_ACCOUNT"><div class="ico"><svg><use href="#ig"/></svg></div> شاهدي أحدث تصاميمنا على إنستغرام <b>تابعينا</b></a>
+        <div class="row" style="border-radius:32px"><div class="ico" style="background:#fff;font-size:30px">🧵</div> نحبّ أن نسمع فكرتكِ ونحوّلها إلى قطعة مطرزة تحمل لمستكِ الشخصية.</div>
+      </div>
+    </div>
+    <form class="form" id="form">
+      <label for="n">الاسم</label>
+      <input id="n" name="name" placeholder="اسمكِ الكامل" required>
+      <label for="e">البريد الإلكتروني</label>
+      <input id="e" name="email" type="email" placeholder="you@example.com" required>
+      <label for="m">رسالتكِ</label>
+      <textarea id="m" name="message" placeholder="أخبرينا بالتصميم أو اللون الذي ترغبين به..." required></textarea>
+      <button class="btn fill" type="submit">إرسال الرسالة</button>
+      <p class="ok" id="ok">وصلتنا رسالتكِ، سنرد خلال 24 ساعة.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ الفوتر ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">
+        <img src="images/p.jpg">
+      </div>
+      <div><h3>روفانا بوتيك</h3><small>تطريز يدوي</small></div>
+    </div>
+    <div class="fgrid">
+      <p>حجابات وأوشحة مطرزة يدوياً بتفاصيل فريدة، لتمنحكِ إطلالة تخصّكِ وحدكِ.</p>
+      <div>
+        <h4>تسوّقي</h4>
+        <a class="l" href="#gallery">المعرض</a><a class="l" href="#products">المنتجات</a><a class="l" href="#about">من نحن</a><a class="l" href="#reviews">آراء العملاء</a><a class="l" href="#contact">تواصلي معنا</a>
+      </div>
+      <div>
+        <h4>تواصل</h4>
+        <p>لتصاميم خاصة أو استفسار، أرسلي رسالة عبر نموذج التواصل وسنعاود الاتصال بكِ.</p>
+        <div class="pills">
+          <a class="pill" href="+967 737000023"><svg><use href="#wa"/></svg> واتساب <span dir="ltr">737 000 023</span></a>
+          <a class="pill" href="https://www.instagram.com/rovanaboutique?exln=MW8waGxodmVraWVsaQ=="><svg><use href="#ig"/></svg> إنستغرام</a>
+        </div>
+      </div>
+    </div>
+    <div class="copy">© 2026 روفانا بوتيك. جميع الحقوق محفوظة. حجابات المطرزة يدوياً.</div>
+  </div>
+</footer>
+
+<a class="fab" href="+967777000023"><svg><use href="#wa"/></svg> اطلبي عبر واتساب</a>
+
+<div class="lb" id="lb" role="dialog" aria-label="عرض الصورة"><div id="lbBox"><p id="lbCap"></p></div></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
